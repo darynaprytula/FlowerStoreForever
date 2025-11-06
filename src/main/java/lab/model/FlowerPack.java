@@ -1,5 +1,6 @@
 package lab.model;
 
+import lab.model.flowers.Flower;
 import lombok.Data;
 
 @Data
@@ -18,5 +19,4 @@ public class FlowerPack {
     public double getPrice() {
         return flower.getPrice() * quantity;
     }
-
 }

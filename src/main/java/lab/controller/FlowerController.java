@@ -1,21 +1,34 @@
 package lab.controller;
 
-import java.util.ArrayList;
 import java.util.List;
-
+import lab.service.FlowerService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import lab.model.Flower;
+import lab.model.flowers.Flower;
 
 @RequestMapping("/flowers")
 @RestController
 public class FlowerController {
-    private List<Flower> listFlower = new ArrayList<>();
+
+    private final FlowerService flowerService;
+
+    @Autowired
+    public FlowerController(FlowerService flowerService) {
+        this.flowerService = flowerService;
+    }
 
     @GetMapping()
     public List<Flower> getFlowers() {
-        return listFlower;
+        return flowerService.getFlowers();
+    }
+
+    @PostMapping()
+    public Flower addFlower(@RequestBody Flower flower) {
+        return flowerService.addFlower(flower);
     }
 }

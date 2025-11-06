@@ -1,12 +1,11 @@
 package lab.model;
 
-import lombok.Data;
+public abstract class Item {
+    protected String description;
 
-@Data
-public class Item {
-    private FlowerBucket flowerBucket;
-
-    double getPrice() {
-        return flowerBucket.getPrice();
+    public String getDescription() {
+        return description;
     }
+
+    public abstract double getPrice();
 }

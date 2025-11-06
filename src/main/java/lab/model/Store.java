@@ -3,6 +3,7 @@ package lab.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import lab.model.flowers.Flower;
 import lombok.Data;
 
 @Data
