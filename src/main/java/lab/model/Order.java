@@ -16,13 +16,14 @@ public class Order {
         this.items = new LinkedList<>();
     }
 
-    public void setPaymentStrategy(Payment payment) {
-        this.payment = payment;
+    public void setPaymentStrategy(Payment paymentStrategy) {
+        this.payment = paymentStrategy;
     }
 
-    public void setDeliveryStrategy(Delivery delivery) {
-        this.delivery = delivery;
+    public void setDeliveryStrategy(Delivery deliveryStrategy) {
+        this.delivery = deliveryStrategy;
     }
+
 
     public void addItem(Item item) {
         if (item != null) {

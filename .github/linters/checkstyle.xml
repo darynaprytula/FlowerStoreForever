@@ -69,7 +69,8 @@
         <!-- =========================================================================== -->
         <!-- SPECIAL HACK FOR NON-STATIC PUBIC FINAL VARIABLE -->
         <module name="VisibilityModifier">
-            <property name="publicMemberPattern" value="^SLOPE_ORDER$"/>
+            <property name="protectedAllowed" value="true"/>
+        <property name="packageAllowed" value="true"/>
         </module>
         <!-- <module name="FinalClass"/> -->
         <module name="InterfaceIsType"/>

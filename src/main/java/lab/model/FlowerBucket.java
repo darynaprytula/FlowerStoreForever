@@ -23,10 +23,10 @@ public class FlowerBucket extends Item {
     }
 
     public List<Item> searchFlower(String name) {
-        final String q = name.toLowerCase();
+        String nameLowerCase = name.toLowerCase();
         return flowers.stream()
-                .filter(f -> f.getDescription() != null &&
-                        f.getDescription().toLowerCase().contains(q))
+                .filter(f -> f.getDescription() != null
+                        && f.getDescription().toLowerCase().contains(nameLowerCase))
                 .toList();
     }
 
