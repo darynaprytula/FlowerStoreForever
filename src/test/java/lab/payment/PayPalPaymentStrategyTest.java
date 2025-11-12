@@ -1,9 +1,6 @@
-package payment;
+package lab.payment;
 
 import org.junit.jupiter.api.Test;
-
-import lab.payment.PayPalPaymentStrategy;
-import lab.payment.Payment;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.io.ByteArrayOutputStream;

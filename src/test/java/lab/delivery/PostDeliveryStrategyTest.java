@@ -1,9 +1,6 @@
-package delivery;
+package lab.delivery;
 
 import org.junit.jupiter.api.Test;
-
-import lab.delivery.Delivery;
-import lab.delivery.PostDeliveryStrategy;
 
 import static org.junit.jupiter.api.Assertions.*;
 

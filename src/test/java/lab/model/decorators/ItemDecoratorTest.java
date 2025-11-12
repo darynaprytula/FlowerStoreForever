@@ -1,7 +1,6 @@
-package model.decorators;
+package lab.model.decorators;
 
 import lab.model.*;
-import lab.model.decorators.ItemDecorator;
 import lab.model.flowers.CactusFlower;
 import lab.model.flowers.RomashkaFlower;
 import org.junit.jupiter.api.Assertions;

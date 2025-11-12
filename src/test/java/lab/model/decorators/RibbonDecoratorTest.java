@@ -1,7 +1,6 @@
-package model.decorators;
+package lab.model.decorators;
 
 import lab.model.*;
-import lab.model.decorators.RibbonDecorator;
 import lab.model.flowers.CactusFlower;
 import org.junit.jupiter.api.*;
 
