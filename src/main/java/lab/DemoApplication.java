@@ -1,6 +1,7 @@
 package lab;
 
 import java.util.List;
+import java.util.TimeZone;
 import java.util.UUID;
 import java.util.stream.Stream;
 import org.springframework.boot.SpringApplication;
@@ -15,7 +16,9 @@ public class DemoApplication {
     private static final int LIMIT = 10;
 
     public static void main(final String[] args) {
+        TimeZone.setDefault(TimeZone.getTimeZone("Europe/Kyiv"));
         SpringApplication.run(DemoApplication.class, args);
+        
     }
 
     @GetMapping("/list")

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import lab.model.flowers.Flower;
 
-@RequestMapping("/flowers")
+@RequestMapping("/flower")
 @RestController
 public class FlowerController {
 
